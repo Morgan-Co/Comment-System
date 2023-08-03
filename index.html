@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconsFont.css">
+    <title>Comment system</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div id="output"></div>
+            <div class="other-content">
+                <div class="main__siderbar sidebar"></div>
+                <div class="main__blocks blocks">
+                    <div class="blocks__smaller-blocks">
+                        <div class="blocks__block"></div>
+                        <div class="blocks__block"></div>
+                        <div class="blocks__block"></div>
+                        <div class="blocks__block"></div>
+                        <div class="blocks__block"></div>
+                        <div class="blocks__block"></div>
+                        <div class="blocks__block"></div>
+                        <div class="blocks__block"></div>
+                    </div>
+                    <div class="blocks__block large-block"></div>
+                </div>
+            </div>
+            <div class="comment-system">
+                <div class="comment-system__interaction comment-interaction">
+                    <a href="#" class="comment-interaction__comment-value">
+                        Комментарии <span id="comment-counter">(0)</span>
+                    </a>
+                    <div class="comment-interaction__sort-group">
+                        <div class="comment-interaction__filter filter-interaction">
+                            <div class="filter__body">
+                                <a href="#" class="filter__link">По количеству оценок</a>
+                                <ul class="filter__list">
+                                    <li>
+                                        <a href="" class="filter__sub-link sort-by-date">По дате</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="filter__sub-link sort-by-rating">По количеству оценок</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="filter__sub-link sort-by-relevance">По актуальности</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="filter__sub-link sort-by-replace-number">По количеству
+                                            ответов</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="filter__arrow"></span>
+                        </div>
+                        <div class="comment-interaction__favourites favourites-interaction">
+                            <a href="" class="favourites-interaction__link">
+                                <span>Избранное</span>
+                                <span class="_icon-heart-solid"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-system__input comment-input">
+                    <div class="comment-input__user-image user-image" data-da=".comment-input__top-left,980,first">
+                        <div class="user-image__img" id="user-img">
+                            <img src="source/img/userImg.png" alt="face">
+                        </div>
+                        <div class="user-image__select-button"><span class="_icon-plus"></span></div>
+                        <input class="user-image__select-image" id="select-input" type="file" accept=".gif, .png, .jpg">
+                    </div>
+                    <form class="comment-input__form" id="comment-input-form">
+                        <div class="comment-input__left">
+                            <div class="comment-input__top">
+                                <div class="comment-input__top-left">
+                                    <div class="comment-input__name" id="comment-input-name"></div>
+                                </div>
+                                <div class="comment-input__top-right">
+                                    <div class="comment-input__limit"></div>
+                                </div>
+                            </div>
+                            <div class="comment-input__bottom">
+                                <div class="comment-input__input" id="comment-input" contenteditable="true"></div>
+                            </div>
+                        </div>
+                        <div class="comment-input__right">
+                            <div class="alert-message" data-da=".comment-input__right,980,last">Слишком длинное
+                                сообщение</div>
+                            <button class="comment-input__button">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="comment-system__comments comments" id="comments">
+                    <ul class="comments__list" id="comments-list">
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/dynamicAdaptiv.js"></script>
+    <!-- <script src="ts/script.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

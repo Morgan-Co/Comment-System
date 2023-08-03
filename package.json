@@ -1,0 +1,21 @@
+{
+    "name": "HW_#11",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "http-server -p 5566"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "author": "",
+    "bugs": {
+    },
+    "devDependencies": {
+        "http-server": "^14.1.1"
+    },
+    "dependencies": {
+        "typescript": "^5.1.6"
+    }
+}
