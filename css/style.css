@@ -553,6 +553,7 @@ body._touch .filter__link {
     font-size: 14px;
     line-height: 17px;
     word-break: break-all;
+    overflow-wrap: anywhere;
     max-width: 100%;
     padding: 15px 10px 14px 20px;
   }
