@@ -361,7 +361,7 @@ body._touch .filter__link {
   width: 100%;
 }
 .comment__right {
-  max-width: 1022px;
+  max-width: 940px;
   width: 100%;
 }
 .comment__top {
@@ -401,6 +401,7 @@ body._touch .filter__link {
 .comment__text {
   font-size: 18px;
   line-height: 22px;
+  word-wrap: break-word;
 }
 .comment__bottom {
   display: flex;
