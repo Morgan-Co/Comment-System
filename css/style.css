@@ -552,6 +552,7 @@ body._touch .filter__link {
   .comment-input__input {
     font-size: 14px;
     line-height: 17px;
+    word-break: break-all;
     max-width: 100%;
     padding: 15px 10px 14px 20px;
   }
